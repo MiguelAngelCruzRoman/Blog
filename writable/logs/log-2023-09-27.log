@@ -1,0 +1,27 @@
+CRITICAL - 2023-09-27 14:24:07 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Autoloader\Autoloader.php on line 252.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-27 15:34:07 --> Undefined array key "u.id"
+in APPPATH\Views\users\usuarios3.php on line 14.
+ 1 APPPATH\Views\users\usuarios3.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u.id"', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\users\\usuarios3.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\users\\usuarios3.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/usuarios3', [], true)
+ 5 APPPATH\Controllers\UserController.php(52): view('users/usuarios3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->usuarios3()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-09-27 15:35:36 --> Undefined variable $usuario
+in APPPATH\Views\users\usuarios3.php on line 11.
+ 1 APPPATH\Views\users\usuarios3.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\users\\usuarios3.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\users\\usuarios3.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('users/usuarios3', [], true)
+ 5 APPPATH\Controllers\UserController.php(52): view('users/usuarios3', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->usuarios3()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')

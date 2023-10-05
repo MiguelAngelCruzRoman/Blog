@@ -1,0 +1,56 @@
+ERROR - 2023-09-13 14:24:21 --> mysqli_sql_exception: Unknown column 'observations' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\ardil\Downloads\blog\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\Users\ardil\Downloads\blog\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\ardil\Downloads\blog\app\Database\Seeds\ProductSeeder.php(43): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\ardil\Downloads\blog\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#7 C:\Users\ardil\Downloads\blog\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\ardil\Downloads\blog\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\ardil\Downloads\blog\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\ardil\Downloads\blog\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-13 14:26:21 --> mysqli_sql_exception: Unknown column 'dimension' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\ardil\Downloads\blog\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\Users\ardil\Downloads\blog\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\ardil\Downloads\blog\app\Database\Seeds\ProductSeeder.php(43): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\ardil\Downloads\blog\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#7 C:\Users\ardil\Downloads\blog\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\ardil\Downloads\blog\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\ardil\Downloads\blog\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\ardil\Downloads\blog\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-13 14:26:57 --> mysqli_sql_exception: Unknown column 'observations' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\ardil\Downloads\blog\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\Users\ardil\Downloads\blog\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\ardil\Downloads\blog\app\Database\Seeds\ProductSeeder.php(43): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\ardil\Downloads\blog\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#7 C:\Users\ardil\Downloads\blog\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\ardil\Downloads\blog\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\ardil\Downloads\blog\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\ardil\Downloads\blog\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-09-13 14:27:13 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\ardil\Downloads\blog\system\Database\BaseBuilder.php(1800): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\Users\ardil\Downloads\blog\system\Database\BaseBuilder.php(2191): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\Users\ardil\Downloads\blog\app\Database\Seeds\ProductSeeder.php(43): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\Users\ardil\Downloads\blog\system\Database\Seeder.php(146): App\Database\Seeds\ProductSeeder->run()
+#7 C:\Users\ardil\Downloads\blog\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\Users\ardil\Downloads\blog\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\Users\ardil\Downloads\blog\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\Users\ardil\Downloads\blog\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}

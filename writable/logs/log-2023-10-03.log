@@ -1,0 +1,1724 @@
+ERROR - 2023-10-03 15:51:46 --> mysqli_sql_exception: Table 'blog.post' doesn't exist in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(26): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 15:51:46 --> Table 'blog.post' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(26): CodeIgniter\Database\BaseConnection->query('select count(*) from post')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 15:52:53 --> mysqli_sql_exception: Table 'blog.user' doesn't exist in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 15:52:53 --> Table 'blog.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select count(*) from user')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 15:52:59 --> mysqli_sql_exception: Table 'blog.post' doesn't exist in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(*)...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(*)...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(*)...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(26): CodeIgniter\Database\BaseConnection->query('select count(*)...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 15:52:59 --> Table 'blog.post' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(26): CodeIgniter\Database\BaseConnection->query('select count(*) from post')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 15:56:39 --> syntax error, unexpected token ","
+in APPPATH\Controllers\PostController.php on line 39.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 15:56:58 --> Undefined variable $posts
+in APPPATH\Views\posts\ejercicio05.php on line 14.
+ 1 APPPATH\Views\posts\ejercicio05.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 15:57:33 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\posts\ejercicio05.php on line 20.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 3 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 15:57:39 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio05.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 15:58:15 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio05.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 16:00:32 --> Undefined variable $post
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio05.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $post', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 16:01:34 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio05.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 16:10:05 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 14.
+ 1 APPPATH\Views\posts\ejercicio05.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:27:30 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio05.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:31:06 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio05.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:31:59 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio05.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:32:41 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio01.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio01.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio01.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio01.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio01', [], true)
+ 5 APPPATH\Controllers\PostController.php(19): view('posts/ejercicio01', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio01()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:33:53 --> Undefined variable $posts
+in APPPATH\Views\posts\ejercicio05.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio05.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:34:32 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\posts\ejercicio05.php on line 22.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 3 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:34:36 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\posts\ejercicio05.php on line 22.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 3 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:34:43 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:35:23 --> Array to string conversion
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:36:47 --> Undefined array key 1
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:36:57 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:37:28 --> Undefined array key "count(*)"
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count(*)"', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:37:46 --> Undefined array key "count(*)"
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count(*)"', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:37:53 --> syntax error, unexpected token "*"
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 3 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:38:28 --> Undefined array key "count(*)"
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count(*)"', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:38:40 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:39:22 --> Array to string conversion
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:39:54 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 3 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:40:00 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): implode([...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(39): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:41:02 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\PostController.php on line 39.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:42:24 --> Array to string conversion
+in APPPATH\Controllers\PostController.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 38)
+ 2 APPPATH\Controllers\PostController.php(38): implode([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:42:37 --> Array to string conversion
+in APPPATH\Controllers\PostController.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 38)
+ 2 APPPATH\Controllers\PostController.php(38): implode([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:43:32 --> Array to string conversion
+in APPPATH\Controllers\PostController.php on line 33.
+ 1 APPPATH\Controllers\PostController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:45:12 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\posts\ejercicio05.php on line 19.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:45:27 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\posts\ejercicio05.php on line 19.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 3 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:45:32 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\posts\ejercicio05.php on line 21.
+ 1 APPPATH\Views\posts\ejercicio05.php(21): implode([...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:47:08 --> syntax error, unexpected token "*"
+in APPPATH\Views\posts\ejercicio05.php on line 18.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 3 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:47:18 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 18.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:47:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 18.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:48:22 --> Undefined variable $totalUsers
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [...], true)
+ 5 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...], [...], [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:48:35 --> Undefined variable $totalUsers
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [...], true)
+ 5 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...], [...], [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:48:52 --> Undefined variable $totalUsers
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [...], true)
+ 5 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...], [...], [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:49:07 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [...], true)
+ 3 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...], [...], [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:49:11 --> Undefined variable $totalUsers
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [...], true)
+ 5 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...], [...], [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:52:21 --> Array to string conversion
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:52:51 --> Undefined variable $v
+in APPPATH\Controllers\PostController.php on line 34.
+ 1 APPPATH\Controllers\PostController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $v', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:52:57 --> Array to string conversion
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:53:28 --> Undefined array key "[count(*)]"
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "[count(*)]"', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:53:41 --> Cannot use [] for reading
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-03 18:53:45 --> Array to string conversion
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio05.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:54:20 --> Unmatched ')'
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 3 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:56:18 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 17.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:56:36 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 18.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:58:08 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 18.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 18:58:14 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 18.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:01:08 --> Undefined variable $valores
+in APPPATH\Views\posts\ejercicio05.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio05.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $valores', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:01:24 --> Undefined variable $valores
+in APPPATH\Views\posts\ejercicio05.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio05.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $valores', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:01:36 --> Undefined variable $valores
+in APPPATH\Views\posts\ejercicio05.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio05.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $valores', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:01:39 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio05.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio05.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:01:56 --> Undefined array key 0
+in APPPATH\Views\posts\ejercicio05.php on line 18.
+ 1 APPPATH\Views\posts\ejercicio05.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php', 18)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(44): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:02:55 --> Cannot use object of type stdClass as array
+in APPPATH\Views\posts\ejercicio05.php on line 18.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 4 APPPATH\Controllers\PostController.php(40): view('posts/ejercicio05', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:13:38 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\PostController.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-03 19:14:20 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\PostController.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-03 19:14:38 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\PostController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-03 19:14:44 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\PostController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-03 19:16:55 --> Undefined variable $post
+in APPPATH\Controllers\PostController.php on line 28.
+ 1 APPPATH\Controllers\PostController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $post', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:17:04 --> Undefined variable $post
+in APPPATH\Controllers\PostController.php on line 28.
+ 1 APPPATH\Controllers\PostController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $post', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:17:34 --> Undefined variable $po
+in APPPATH\Controllers\PostController.php on line 31.
+ 1 APPPATH\Controllers\PostController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $po', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:18:21 --> Call to undefined function App\Controllers\query()
+in APPPATH\Controllers\PostController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:18:31 --> Call to undefined function App\Controllers\query()
+in APPPATH\Controllers\PostController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:18:41 --> Unclosed '{' on line 22 does not match ')'
+in APPPATH\Controllers\PostController.php on line 31.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:19:03 --> Undefined variable $dab
+in APPPATH\Controllers\PostController.php on line 31.
+ 1 APPPATH\Controllers\PostController.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dab', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:19:10 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\PostController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:20:06 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\PostController.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:21:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:21:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from posts as p join users as u limit ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:24:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 5' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:24:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 5' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from posts as p right join users as u limit 5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:24:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 5' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:24:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 5' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from posts as p right join users as u limit 5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:28:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'left userinfo as ui on  u.id = ui.id
+                            limit 5' at line 3 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:28:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'left userinfo as ui on  u.id = ui.id
+                            limit 5' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from posts as p 
+                            join users as u on p.autor = u.id 
+                            join left userinfo as ui on  u.id = ui.id
+                            limit 5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:30:50 --> mysqli_sql_exception: Table 'blog.post' doesn't exist in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:30:50 --> Table 'blog.post' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from post limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:30:54 --> mysqli_sql_exception: Table 'blog.post' doesn't exist in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:30:54 --> Table 'blog.post' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(24): CodeIgniter\Database\BaseConnection->query('select * from post limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:31:45 --> Undefined variable $post
+in APPPATH\Controllers\PostController.php on line 33.
+ 1 APPPATH\Controllers\PostController.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $post', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:34:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by p.id asc' at line 3 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:34:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by p.id asc' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select * from posts as p 
+                            left join users as u on p.autor = u.id 
+                            limit 5 order by p.id asc')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:34:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by p.id asc' at line 3 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:34:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by p.id asc' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select * from posts as p 
+                            left join users as u on p.autor = u.id 
+                            limit 5 order by p.id asc')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:34:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id asc' at line 3 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:34:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by id asc' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select * from posts as p 
+                            left join users as u on p.autor = u.id 
+                            limit 5 order by id asc')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:34:28 --> mysqli_sql_exception: Column 'id' in order clause is ambiguous in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:34:28 --> Column 'id' in order clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select * from posts as p 
+                            left join users as u on p.autor = u.id 
+                            order by id asc limit 5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:38:13 --> mysqli_sql_exception: Unknown column 'ui.name' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.title,...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.title,...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.title,...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select p.title,...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:38:14 --> Unknown column 'ui.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select p.title, concat(ui.name," ",ui.lastname) as "nombreCompleto" from posts as p 
+                            right join users as u on p.autor = u.id 
+                            order by u.id asc, p.category asc limit 5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:39:54 --> mysqli_sql_exception: Table 'blog.userinfor' doesn't exist in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.title,...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.title,...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.title,...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select p.title,...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:39:54 --> Table 'blog.userinfor' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(27): CodeIgniter\Database\BaseConnection->query('select p.title, concat(ui.name," ",ui.lastname) as "nombreCompleto" from posts as p 
+                             join users as u on p.autor = u.id 
+                             join userinfor as ui on ui.id = u.id
+                             limit 5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:43:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aslimit 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(26): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:43:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aslimit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(26): CodeIgniter\Database\BaseConnection->query('select * from posts order by created_at aslimit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:57:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.title, p.status from posts as p 
+                             left join use...' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(45): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:57:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.title, p.status from posts as p 
+                             left join use...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(45): CodeIgniter\Database\BaseConnection->query('select concat(ui.name," ",ui.lastname) as "nombreCompleto",ui.email,ui.phone p.title, p.status from posts as p 
+                             left join users as u on p.autor = u.id 
+                             right join userinfo as ui on u.id = ui.id
+                             where p.status=0 limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 19:58:28 --> Undefined variable $posts
+in APPPATH\Controllers\PostController.php on line 51.
+ 1 APPPATH\Controllers\PostController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 19:59:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.title, p.status from posts as p 
+                             left join use...' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(45): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 19:59:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.title, p.status from posts as p 
+                             left join use...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(45): CodeIgniter\Database\BaseConnection->query('select concat(ui.name," ",ui.lastname) as "nombreCompleto",ui.website,ui.phone p.title, p.status from posts as p 
+                             left join users as u on p.autor = u.id 
+                             right join userinfo as ui on u.id = ui.id
+                             where p.status=0 limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 20:03:28 --> Undefined variable $db
+in APPPATH\Controllers\PostController.php on line 45.
+ 1 APPPATH\Controllers\PostController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 20:03:31 --> Undefined variable $db
+in APPPATH\Controllers\PostController.php on line 45.
+ 1 APPPATH\Controllers\PostController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 20:03:38 --> Undefined variable $db
+in APPPATH\Controllers\PostController.php on line 45.
+ 1 APPPATH\Controllers\PostController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 20:03:49 --> Undefined array key "email"
+in APPPATH\Views\posts\ejercicio03.php on line 19.
+ 1 APPPATH\Views\posts\ejercicio03.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio03.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio03.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio03', [], true)
+ 5 APPPATH\Controllers\PostController.php(55): view('posts/ejercicio03', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:09:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select u.userna...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select u.userna...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select u.userna...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.userna...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:09:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.username, concat(ui.name," ",ui.lastname) as "nombreCompleto", ui.website, ui.gender, p.created_at from posts as p 
+                             left join users as u on p.autor = u.id 
+                             left join userinfo as ui on u.id = ui.id
+                             limit = 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:09:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select u.userna...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select u.userna...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select u.userna...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.userna...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:09:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.username, concat(ui.name," ",ui.lastname) as "nombreCompleto", ui.website, ui.gender, p.created_at from posts as p 
+                             left join users as u on p.autor = u.id 
+                             left join userinfo as ui on u.id = ui.id
+                             limit = 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:10:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 1' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select u.userna...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select u.userna...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select u.userna...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.userna...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:10:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 1' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.username, concat(ui.name," ",ui.lastname) as "nombreCompleto", ui.website, ui.gender, p.created_at from posts as p 
+                             left join users as u on p.autor = u.id 
+                             left join userinfo as ui on u.id = ui.id
+                             limit = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:10:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:10:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from posts where status =0 limit = 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:10:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:10:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from posts where status =0 limit = 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:10:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:10:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from posts where status =0 limit = 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:10:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:10:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from posts where status =0 limit =10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:11:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:11:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from posts limit =10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:11:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:11:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from posts limit=10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:14:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%2023% limit 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:14:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%2023% limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from posts where created_at like %2023% limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:14:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%2023% limit 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:14:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%2023% limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(62): CodeIgniter\Database\BaseConnection->query('select * from posts where created_at like %2023% limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:15:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at between "2023/01/01" and "2023/12/31" limit 5' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select u.userna...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select u.userna...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select u.userna...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.userna...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:15:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at between "2023/01/01" and "2023/12/31" limit 5' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.username, concat(ui.name," ",ui.lastname) as "nombreCompleto", ui.website, ui.gender, p.created_at from posts as p 
+                             left join users as u on p.autor = u.id 
+                             left join userinfo as ui on u.id = ui.id
+                             p.created_at between "2023/01/01" and "2023/12/31" limit 5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:15:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at between "2023/01/01" and "2023/12/31" limit 5' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select u.userna...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select u.userna...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select u.userna...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.userna...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:15:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at between "2023/01/01" and "2023/12/31" limit 5' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.username, concat(ui.name," ",ui.lastname) as "nombreCompleto", ui.website, ui.gender, p.created_at from posts as p 
+                             left join users as u on p.autor = u.id 
+                             left join userinfo as ui on u.id = ui.id
+                             p.created_at between "2023/01/01" and "2023/12/31" limit 5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:15:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at between "2023/01/01" and "2023/12/31"' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select u.userna...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select u.userna...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select u.userna...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.userna...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:15:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at between "2023/01/01" and "2023/12/31"' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.username, concat(ui.name," ",ui.lastname) as "nombreCompleto", ui.website, ui.gender, p.created_at from posts as p 
+                             left join users as u on p.autor = u.id 
+                             left join userinfo as ui on u.id = ui.id
+                             p.created_at between "2023/01/01" and "2023/12/31"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-03 20:15:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at between "2023/01/01" and "2023/12/31"' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select u.userna...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select u.userna...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select u.userna...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.userna...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-03 20:15:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p.created_at between "2023/01/01" and "2023/12/31"' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select u.username, concat(ui.name," ",ui.lastname) as "nombreCompleto", ui.website, ui.gender, p.created_at from posts as p 
+                             left join users as u on p.autor = u.id 
+                             left join userinfo as ui on u.id = ui.id
+                             p.created_at between "2023/01/01" and "2023/12/31"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:21:59 --> Undefined constant "m"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 4 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:23:42 --> syntax error, unexpected token "else"
+in APPPATH\Views\posts\ejercicio04.php on line 24.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:23:58 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:24:37 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:24:46 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:25:09 --> syntax error, unexpected token "echo"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:25:19 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:25:22 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:25:53 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:26:04 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:26:06 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:26:18 --> syntax error, unexpected identifier "center"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:26:19 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:26:36 --> syntax error, unexpected token "}"
+in APPPATH\Views\posts\ejercicio04.php on line 23.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:26:59 --> Undefined constant "f"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 4 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:27:12 --> Undefined constant "f"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 4 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:27:16 --> Undefined constant "f"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 4 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:28:30 --> Undefined constant "f"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 4 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:37:36 --> syntax error, unexpected token "if"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:38:47 --> syntax error, unexpected token "if"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:40:39 --> syntax error, unexpected token "if"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-03 21:41:18 --> syntax error, unexpected token "if"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 3 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')

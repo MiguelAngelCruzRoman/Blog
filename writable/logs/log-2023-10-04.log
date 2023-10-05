@@ -1,0 +1,1673 @@
+CRITICAL - 2023-10-04 03:08:52 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\PostController.php on line 110.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:09:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:09:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select * from posts as p
+                            join categories as c on p.')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:12:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sleect * from categories limit 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('sleect * from c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('sleect * from c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('sleect * from c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(107): CodeIgniter\Database\BaseConnection->query('sleect * from c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:12:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sleect * from categories limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(107): CodeIgniter\Database\BaseConnection->query('sleect * from categories limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:20:33 --> mysqli_sql_exception: Unknown column 'mep.autor' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:20:33 --> Unknown column 'mep.autor' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u.username," (",mep.autor,")") as autor, count(p.autor)from posts as p
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:25:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.category  from posts as p 
+                            left join categori...' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:25:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.category  from posts as p 
+                            left join categori...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u.username," (",p.autor,")")as autor, , p.category  from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.category limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:25:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.category from posts as p 
+                            left join categorie...' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:25:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.category from posts as p 
+                            left join categorie...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u.username," (",p.autor,")")as autor, , p.category from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.category limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:26:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.autor from posts as p 
+                            left join categories a...' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:26:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.autor from posts as p 
+                            left join categories a...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u.username," (",p.autor,")")as autor, , p.autor from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.category limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:27:33 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:27:33 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u.username," (",p.autor,")")as autor, p.category from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by (p.autor, p.category) limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:27:39 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:27:39 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(u.username," (",p.autor,")")as autor, p.category from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by (p.autor, p.category) limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:39:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor = 1' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select autor, g...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select autor, g...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select autor, g...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(108): CodeIgniter\Database\BaseConnection->query('select autor, g...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:39:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor = 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(108): CodeIgniter\Database\BaseConnection->query('select autor, group_concat(id) from posts group by autor where autor = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:39:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor = 1' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select autor, g...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select autor, g...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select autor, g...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(108): CodeIgniter\Database\BaseConnection->query('select autor, g...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:39:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor = 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(108): CodeIgniter\Database\BaseConnection->query('select autor, group_concat(id) from posts group by autor where autor = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:40:18 --> mysqli_sql_exception: Invalid use of group function in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select autor, c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select autor, c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select autor, c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(108): CodeIgniter\Database\BaseConnection->query('select autor, c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:40:18 --> Invalid use of group function
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(108): CodeIgniter\Database\BaseConnection->query('select autor, count(group_concat(id)) from posts  where autor = 1 group by autor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:47:47 --> mysqli_sql_exception: Unknown column 'title' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select *, group...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select *, group...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select *, group...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select *, group...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:47:47 --> Unknown column 'title' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select *, group_concat(id,title) from categories group by id limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 03:49:48 --> mysqli_sql_exception: Invalid use of group function in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select *, group...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select *, group...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select *, group...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(111): CodeIgniter\Database\BaseConnection->query('select *, group...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 03:49:48 --> Invalid use of group function
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(111): CodeIgniter\Database\BaseConnection->query('select *, group_concat(category, "(",count(id),")") from categories group by id limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 03:51:43 --> Undefined variable $c2
+in APPPATH\Controllers\PostController.php on line 116.
+ 1 APPPATH\Controllers\PostController.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $c2', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 116)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 03:56:40 --> Undefined variable $c
+in APPPATH\Controllers\PostController.php on line 116.
+ 1 APPPATH\Controllers\PostController.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $c', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 116)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:01:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(u.username," (",p.autor,")")as autor, count(p.id) from posts as p 
+        ...' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.catego...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.catego...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.catego...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select p.catego...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:01:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(u.username," (",p.autor,")")as autor, count(p.id) from posts as p 
+        ...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select p.category concat(u.username," (",p.autor,")")as autor, count(p.id) from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.autor,p.category ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:02:37 --> mysqli_sql_exception: Unknown column 'c.title' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:02:37 --> Unknown column 'c.title' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(c.title,"(",p.category,")"), concat(u.username," (",p.autor,")")as autor, count(p.id) from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.autor,p.category ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:03:30 --> mysqli_sql_exception: Unknown column 'c.title' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat("...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat("...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat("...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat("...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:03:30 --> Unknown column 'c.title' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat("(",p.category,")",c.title), concat(u.username," (",p.autor,")")as autor, count(p.id) from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.autor,p.category ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:06:23 --> mysqli_sql_exception: Unknown column 'c.title' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat("...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat("...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat("...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat("...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:06:23 --> Unknown column 'c.title' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat("(",p.category,")",c.title), concat(u.username," (",p.autor,")")as autor, count(p.id) from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.autor,p.category limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:18:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 10' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:18:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 10' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(c.category,"(",p.category,")"), concat(p.autor,"[",u.username,"(",p.autor,")","]")as autor, count(p.id) from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.category,  limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:19:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 10' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:19:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 10' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(c.category,"(",p.category,")"), concat(count(p.id),"[",u.username,"(",p.autor,")","]")as autor from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.category,  limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:21:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from posts group by category' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:21:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from posts group by category' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select count(category), from posts group by category')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:23:33 --> mysqli_sql_exception: Unknown column 'posts' in 'group statement' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:23:33 --> Unknown column 'posts' in 'group statement'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select count(category),autor from posts group by posts order by autor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:23:38 --> mysqli_sql_exception: Unknown column 'post' in 'group statement' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:23:38 --> Unknown column 'post' in 'group statement'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select count(category),autor from posts group by post order by autor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:24:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by autor' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:24:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by autor' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select count(category),autor from posts group by  order by autor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:35:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'count(p.id) from posts as p 
+                            left join categorie...' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:35:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'count(p.id) from posts as p 
+                            left join categorie...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(count(c.category),"(",c.category,")"), concat(u.username," (",p.autor,")")as autor,group_concat(p.id) count(p.id) from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.autor order by c.category limit 20')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:35:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'count(p.id) from posts as p 
+                            left join categorie...' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:35:43 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'count(p.id) from posts as p 
+                            left join categorie...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(103): CodeIgniter\Database\BaseConnection->query('select concat(count(c.category),"(",c.category,")"), concat(u.username," (",p.autor,")")as autor,group_concat(p.id) count(p.id) from posts as p 
+                            left join categories as c on p.category = c.id
+                            right join users as u on u.id = p.autor
+                            group by p.autor order by c.category limit 20')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:43:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where post = 1limit 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select autor, g...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select autor, g...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select autor, g...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(107): CodeIgniter\Database\BaseConnection->query('select autor, g...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:43:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where post = 1limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(107): CodeIgniter\Database\BaseConnection->query('select autor, group_concat(id),count(id) from posts group by autor where post = 1limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:43:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where post = 1 limit 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select autor, g...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select autor, g...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select autor, g...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(107): CodeIgniter\Database\BaseConnection->query('select autor, g...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:43:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where post = 1 limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(107): CodeIgniter\Database\BaseConnection->query('select autor, group_concat(id),count(id) from posts group by autor where post = 1 limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:43:52 --> mysqli_sql_exception: Unknown column 'post' in 'where clause' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select autor, g...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select autor, g...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select autor, g...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(107): CodeIgniter\Database\BaseConnection->query('select autor, g...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:43:52 --> Unknown column 'post' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(107): CodeIgniter\Database\BaseConnection->query('select autor, group_concat(id),count(id) from posts where post = 1 group by autor limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:58:50 --> mysqli_sql_exception: Invalid use of group function in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(gr...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(gr...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(gr...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(gr...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:58:50 --> Invalid use of group function
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(group_concat(category, "(",id,")")), count(id) from categories group by category limit 100')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:59:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 100' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:59:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 100' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(category, "(",id,")"), count(id) from categories group by category limit 100')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:59:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 100' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:59:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 100' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(category, "(",id,")"), count(id) from categories group by category limit 100')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:59:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 100' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:59:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 100' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(category, "(",id,")"), count(id) from categories group by category limit 100')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:59:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:59:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(category, "(",id,")"), count(id) from categories group by category limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 04:59:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 04:59:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(category, "(",id,")"), count(id) from categories group by category ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:01:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 10' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:01:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")"), count(id) from categories group by category limit 10' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(category, "(",id,")"), count(id) from categories group by category limit 10')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:02:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")")), count(id) from categories group by category limit 100' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select count(ca...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select count(ca...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select count(ca...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(ca...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:02:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' "(",id,")")), count(id) from categories group by category limit 100' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select count(category, "(",id,")")), count(id) from categories group by category limit 100')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:03:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories limit 50' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select group_co...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select group_co...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select group_co...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select group_co...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:03:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories limit 50' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select group_concat(category, "(",id,")"), count(id),* from categories limit 50')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:03:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories limit 50' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select group_co...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select group_co...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select group_co...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select group_co...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:03:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories limit 50' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select group_concat(category, "(",id,")"), count(id),* from categories limit 50')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:03:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories group limit 50' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select concat(c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:03:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories group limit 50' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select concat(category, "(",id,")"), count(id),* from categories group limit 50')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:03:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories  limit 50' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select concat(c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:03:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories  limit 50' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select concat(category, "(",id,")"), count(id),* from categories  limit 50')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:03:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(c...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(c...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(c...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select concat(c...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:03:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* from categories' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(110): CodeIgniter\Database\BaseConnection->query('select concat(category, "(",id,")"), count(id),* from categories ')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 05:06:32 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 23068680 bytes)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-04 05:06:54 --> include_once(C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php): Failed to open stream: Resource temporarily unavailable
+in SYSTEMPATH\Autoloader\Autoloader.php on line 306.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php): Failed to open stream: Resource temporarily unavailable', 'C:\\Users\\ardil\\Downloads\\blog\\system\\Autoloader\\Autoloader.php', 306)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 6 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 05:06:56 --> include_once(C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php): Failed to open stream: Resource temporarily unavailable
+in SYSTEMPATH\Autoloader\Autoloader.php on line 306.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php): Failed to open stream: Resource temporarily unavailable', 'C:\\Users\\ardil\\Downloads\\blog\\system\\Autoloader\\Autoloader.php', 306)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 6 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 05:07:02 --> include_once(C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php): Failed to open stream: Resource temporarily unavailable
+in SYSTEMPATH\Autoloader\Autoloader.php on line 306.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php): Failed to open stream: Resource temporarily unavailable', 'C:\\Users\\ardil\\Downloads\\blog\\system\\Autoloader\\Autoloader.php', 306)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(306): include_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 6 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 7 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:09:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.category from posts as p join categories as c on p.category = c.id limit 50' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, p....', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, p....')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, p....')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select p.id, p....')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:09:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.category from posts as p join categories as c on p.category = c.id limit 50' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select p.id, p.autor c.category from posts as p join categories as c on p.category = c.id limit 50')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 05:12:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where p.autor = 1' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, p....', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, p....')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, p....')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select p.id, p....')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 05:12:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where p.autor = 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(109): CodeIgniter\Database\BaseConnection->query('select p.id, p.autor, c.category from posts as p join categories as c on p.category = c.id group by p.autor order by c.id where p.autor = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 05:26:10 --> Undefined constant "f"
+in APPPATH\Views\posts\ejercicio04.php on line 22.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio04', [], true)
+ 4 APPPATH\Controllers\PostController.php(73): view('posts/ejercicio04', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 14:41:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join userinfo as ui on u.id = ui.id 
+                            limit 30' at line 2 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(123): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 14:41:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'join userinfo as ui on u.id = ui.id 
+                            limit 30' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(123): CodeIgniter\Database\BaseConnection->query('select * from posts as p join users as u on p.autor = u.id limit
+                            join userinfo as ui on u.id = ui.id 
+                            limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 14:48:31 --> mysqli_sql_exception: Unknown column 'ui.genders' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id,p.t...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id,p.t...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id,p.t...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(123): CodeIgniter\Database\BaseConnection->query('select p.id,p.t...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 14:48:32 --> Unknown column 'ui.genders' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(123): CodeIgniter\Database\BaseConnection->query('select p.id,p.title,p.autor,u.username,ui.name,ui.genders from posts as p 
+                            left join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 14:52:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ri join users as u on p.autor = u.id
+                            left join u...' at line 2 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id,p.t...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id,p.t...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id,p.t...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(123): CodeIgniter\Database\BaseConnection->query('select p.id,p.t...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 14:52:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ri join users as u on p.autor = u.id
+                            left join u...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(123): CodeIgniter\Database\BaseConnection->query('select p.id,p.title,p.autor,u.username,ui.name,ui.gender from posts as p 
+                            ri join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 14:52:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ri join users as u on p.autor = u.id
+                            left join u...' at line 2 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id,p.t...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id,p.t...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id,p.t...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(123): CodeIgniter\Database\BaseConnection->query('select p.id,p.t...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 14:52:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ri join users as u on p.autor = u.id
+                            left join u...' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(123): CodeIgniter\Database\BaseConnection->query('select p.id,p.title,p.autor,u.username,ui.name,ui.gender from posts as p 
+                            ri join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 14:54:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor = 1' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(127): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 14:54:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor = 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(127): CodeIgniter\Database\BaseConnection->query('select * from posts limit 30 where autor = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 14:54:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor = 1' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(127): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 14:54:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor = 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(127): CodeIgniter\Database\BaseConnection->query('select * from posts limit 30 where autor = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 14:54:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor=1' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(127): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 14:54:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor=1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(127): CodeIgniter\Database\BaseConnection->query('select * from posts limit 30 where autor=1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 14:57:09 --> Undefined variable $posts
+in APPPATH\Controllers\PostController.php on line 111.
+ 1 APPPATH\Controllers\PostController.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 14:57:15 --> Undefined variable $posts
+in APPPATH\Controllers\PostController.php on line 111.
+ 1 APPPATH\Controllers\PostController.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 14:57:35 --> Undefined variable $posts
+in APPPATH\Controllers\PostController.php on line 111.
+ 1 APPPATH\Controllers\PostController.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 14:58:47 --> Undefined variable $posts
+in APPPATH\Views\posts\ejercicio06.php on line 13.
+ 1 APPPATH\Views\posts\ejercicio06.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(112): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 14:59:41 --> syntax error, unexpected token ";"
+in APPPATH\Views\posts\ejercicio06.php on line 15.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 3 APPPATH\Controllers\PostController.php(112): view('posts/ejercicio06', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:00:09 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\posts\ejercicio06.php on line 16.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 3 APPPATH\Controllers\PostController.php(112): view('posts/ejercicio06', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:00:15 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio06.php on line 14.
+ 1 APPPATH\Views\posts\ejercicio06.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(112): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:00:17 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio06.php on line 14.
+ 1 APPPATH\Views\posts\ejercicio06.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(112): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:01:45 --> Undefined variable $posts
+in APPPATH\Views\posts\ejercicio06.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio06.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(112): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:10:54 --> Undefined variable $posts
+in APPPATH\Views\posts\ejercicio06.php on line 13.
+ 1 APPPATH\Views\posts\ejercicio06.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:12:21 --> syntax error, unexpected variable "$postsPorCategoria", expecting "," or ";"
+in APPPATH\Views\posts\ejercicio06.php on line 14.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 3 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:14:48 --> Undefined variable $c
+in APPPATH\Views\posts\ejercicio06.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio06.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $c', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:15:24 --> Undefined variable $ppc
+in APPPATH\Views\posts\ejercicio06.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio06.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ppc', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:15:40 --> Undefined variable $ppc
+in APPPATH\Views\posts\ejercicio06.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio06.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ppc', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:16:43 --> Undefined variable $ppc
+in APPPATH\Views\posts\ejercicio06.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio06.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ppc', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:19:33 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio06.php on line 13.
+ 1 APPPATH\Views\posts\ejercicio06.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:19:50 --> Undefined variable $data
+in APPPATH\Views\posts\ejercicio06.php on line 13.
+ 1 APPPATH\Views\posts\ejercicio06.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\ardil\\Downloads\\blog\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:21:47 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\posts\ejercicio06.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 3 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:24:46 --> syntax error, unexpected string content "\' ?>"
+in APPPATH\Views\posts\ejercicio06.php on line 21.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 3 APPPATH\Controllers\PostController.php(114): view('posts/ejercicio06', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:26:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor=1' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(121): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:26:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor=1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(121): CodeIgniter\Database\BaseConnection->query('select * from posts limit 30 where autor=1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:27:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where id=1' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(121): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:27:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where id=1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(121): CodeIgniter\Database\BaseConnection->query('select * from posts limit 30 where id=1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:29:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor =5' at line 1 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select * from p...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select * from p...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select * from p...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(121): CodeIgniter\Database\BaseConnection->query('select * from p...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:29:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where autor =5' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(121): CodeIgniter\Database\BaseConnection->query('select * from posts limit 30 where autor =5')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:31:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like %2023% asc limit 30' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, ui...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, ui...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, ui...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:31:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like %2023% asc limit 30' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui.name,ui.gender from posts as p 
+                            left join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            where ui.gender = "f", p.created_at like %2023% asc limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:31:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like %2023% asc limit 30' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, ui...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, ui...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, ui...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:31:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like %2023% asc limit 30' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui.name,ui.gender from posts as p 
+                            left join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            where ui.gender = "f", p.created_at like %2023% asc limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:31:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at = %2023% asc limit 30' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, ui...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, ui...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, ui...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:31:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at = %2023% asc limit 30' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui.name,ui.gender from posts as p 
+                            left join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            where ui.gender = "f", p.created_at = %2023% asc limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:31:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at = like %2023% asc limit 30' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, ui...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, ui...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, ui...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:31:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at = like %2023% asc limit 30' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui.name,ui.gender from posts as p 
+                            left join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            where ui.gender = "f", p.created_at = like %2023% asc limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:33:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like "%2023%" asc limit 30' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, ui...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, ui...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, ui...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:33:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like "%2023%" asc limit 30' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui.name,ui.gender from posts as p 
+                            left join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            where ui.gender = "f", p.created_at like "%2023%" asc limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:33:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like "%2023%" limit 30' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, ui...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, ui...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, ui...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:33:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like "%2023%" limit 30' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui.name,ui.gender from posts as p 
+                            left join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            where ui.gender = "f", p.created_at like "%2023%" limit 30')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 15:34:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like "%2023"' at line 4 in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.id, ui...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.id, ui...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.id, ui...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 15:34:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' p.created_at like "%2023"' at line 4
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(117): CodeIgniter\Database\BaseConnection->query('select p.id, ui.name,ui.gender from posts as p 
+                            left join users as u on p.autor = u.id
+                            left join userinfo as ui on u.id = ui.id 
+                            where ui.gender = "f", p.created_at like "%2023"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:34:19 --> Undefined variable $posts
+in APPPATH\Controllers\PostController.php on line 125.
+ 1 APPPATH\Controllers\PostController.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:40:27 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\PostController.php on line 135.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 15:59:27 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\posts\ejercicio07.php on line 43.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 3 APPPATH\Controllers\PostController.php(141): view('posts/ejercicio07', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-04 16:01:36 --> syntax error, unexpected identifier "postsMujer2023", expecting "]"
+in APPPATH\Controllers\PostController.php on line 137.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\ardil\\Downloads\\blog\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 16:07:03 --> mysqli_sql_exception: Invalid use of group function in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select category...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select category...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select category...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(147): CodeIgniter\Database\BaseConnection->query('select category...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 16:07:03 --> Invalid use of group function
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(147): CodeIgniter\Database\BaseConnection->query('select category, count(*), max(count(*)) as "ppc" from categories group by category')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 16:07:20 --> mysqli_sql_exception: Invalid use of group function in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select category...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select category...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select category...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(147): CodeIgniter\Database\BaseConnection->query('select category...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 16:07:20 --> Invalid use of group function
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(147): CodeIgniter\Database\BaseConnection->query('select category, count(*), max(count(*)) as "ppc" from categories')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+ERROR - 2023-10-04 16:07:33 --> mysqli_sql_exception: Invalid use of group function in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select category...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select category...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select category...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(147): CodeIgniter\Database\BaseConnection->query('select category...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-04 16:07:33 --> Invalid use of group function
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(147): CodeIgniter\Database\BaseConnection->query('select category, count(*), max(count(*)) as "ppc" from categories')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
