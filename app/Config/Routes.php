@@ -21,3 +21,15 @@ $routes->get('posts/ejercicio07','PostController::ejercicio07');
 $routes->get('posts/ejercicio08','PostController::ejercicio08');
 $routes->get('posts/ejercicio09','PostController::ejercicio09');
 $routes->get('posts/ejercicio10','PostController::ejercicio10');
+
+$routes->get('exportar/opciones','ExportarBDController::opciones');
+$routes->get('exportar/csv_posts','ExportarBDController::exportar_CSV_Posts');
+$routes->get('exportar/pdf_posts','ExportarBDController::exportar_PDF_Posts');
+$routes->get('exportar/csv_categories','ExportarBDController::exportar_CSV_Categories');
+$routes->get('exportar/pdf_categories','ExportarBDController::exportar_PDF_Categories');
+$routes->get('exportar/csv_users','ExportarBDController::exportar_CSV_Users');
+$routes->get('exportar/pdf_users','ExportarBDController::exportar_PDF_Users');
+$routes->get('exportar/csv_comments','ExportarBDController::exportar_CSV_Comments');
+$routes->get('exportar/pdf_comments','ExportarBDController::exportar_PDF_Comments');
+
+

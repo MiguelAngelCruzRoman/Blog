@@ -1,0 +1,24 @@
+ERROR - 2023-10-06 01:43:43 --> mysqli_sql_exception: Unknown column 'u.lastname' in 'field list' in C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\ardil\Downloads\blog\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\ardil\Downloads\blog\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\ardil\Downloads\blog\app\Controllers\PostController.php(45): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+#5 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\ardil\Downloads\blog\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ardil\Downloads\blog\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ardil\Downloads\blog\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\...')
+#9 {main}
+CRITICAL - 2023-10-06 01:43:43 --> Unknown column 'u.lastname' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(45): CodeIgniter\Database\BaseConnection->query('select concat(u.username,"",u.lastname) as username,u.email,u.phone,p.title from users as u join
+        posts as p on u.id = p.autor where p.status = 0')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio03()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ardil\\Downloads\\blog\\public\\index.php')
+CRITICAL - 2023-10-06 02:09:51 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Helpers\array_helper.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
